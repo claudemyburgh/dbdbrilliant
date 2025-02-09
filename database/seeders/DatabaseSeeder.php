@@ -15,9 +15,12 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+        $user =User::factory()->create([
+            'name' => 'Claude Myburgh',
+            'email' => 'claude@dbdbrilliant.co.za',
+            'phone' => '0817198302',
+            'affiliate_code' => 'dbd712',
+            'approved' => true
         ]);
     }
 }
