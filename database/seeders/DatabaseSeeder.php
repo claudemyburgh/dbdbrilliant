@@ -22,5 +22,11 @@ class DatabaseSeeder extends Seeder
             'affiliate_code' => 'dbd712',
             'approved' => true
         ]);
+
+        $this->call([
+            TestimonialSeeder::class
+        ]);
+
+
     }
 }

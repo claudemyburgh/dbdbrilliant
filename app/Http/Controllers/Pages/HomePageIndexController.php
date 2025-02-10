@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Pages;
 
 use App\Http\Controllers\Controller;
+use App\Models\Testimonial;
 use Illuminate\Http\Request;
 
 class HomePageIndexController extends Controller
@@ -12,6 +13,12 @@ class HomePageIndexController extends Controller
      */
     public function __invoke()
     {
-        return view('pages.home');
+        $testimonials =  Testimonial::with('user')->get()->take(12);
+
+//        return $testimonials;
+
+        return view('pages.home', [
+            'testimonials' => $testimonials
+        ]);
     }
 }

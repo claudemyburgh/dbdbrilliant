@@ -12,7 +12,7 @@
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600,800,900&display=swap" rel="stylesheet" />
 
     <!-- Styles / Scripts -->
     <style>
@@ -22,7 +22,7 @@
     </style>
     @vite(['resources/css/app.css', 'resources/ts/app.ts'])
     @filamentStyles
-
+    @livewireStyles
 </head>
 <body class="font-sans antialiased ">
 <a class="sr-only focus:not-sr-only focus:fixed border-none bg-sky-500 shadow-lg shadow-black/50 outline-sky-600 text-white focus:top-5 focus:px-3 focus:py-2 focus:rounded focus:left-5 z-[1000]" href="#main">Skip to content</a>
@@ -31,5 +31,6 @@
 </main>
 
 @filamentScripts
+@livewireScriptConfig
 </body>
 </html>

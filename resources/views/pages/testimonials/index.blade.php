@@ -1,9 +1,8 @@
 <x-app-layout>
 
-    <x-hero/>
-    <x-counter-stats/>
-    <div class="grid grid-cols-3 gap-4 wrapper">
-        @each('components.testimonials.card', $testimonials, 'testimonial')
+
+    <div class="wrapper my-12">
+       <livewire:testimonials-index/>
     </div>
 
 
